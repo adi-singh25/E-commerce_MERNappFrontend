@@ -1,0 +1,246 @@
+.navbar{
+    display:flex;
+    justify-content:space-around;
+    padding:16px;
+    box-shadow: 0 1px 3px -2px  black;
+    align-items:center;
+}
+
+.nav-logo{
+    display:flex;
+    align-items:center;
+    gap: 10px;
+
+    
+}
+.nav-logo p{
+    color:black;
+    font-size:38px;
+    font-weight:600;
+
+}
+
+.nav-menu{
+    display:flex;
+    align-items:center;
+    list-style: none;
+    gap:50px;
+    color: #626262;
+    font-size:20px;
+    font-weight: 600;
+}
+
+.nav-menu li{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    justify-content:center;
+    gap:3px;
+    cursor: pointer;
+
+}
+
+.nav-menu hr{
+
+    border:none;
+    width:80%;
+    height:3px;
+    border-radius:10px;
+    background:#FF4141;
+
+
+
+}
+
+
+
+
+/* Styling for the .nav-login-cart container */
+/* Styling for the .nav-login-cart container */
+.nav-login-cart {
+    display: flex;                /* Aligns children in a row */
+    align-items: center;          /* Vertically centers children */
+    gap: 35px;                    /* Space between button and image */
+}
+
+/* Styling for the button */
+.nav-login-cart button {
+    background-color: #007bff;    /* Blue background */
+    color: white;                 /* White text */
+    border: none;                 /* Removes the border */
+    border-radius: 3px;           /* Rounds the corners */
+    padding: 8px 16px;            /* Adds padding inside the button */
+    font-size: 16px;              /* Sets the font size */
+    cursor: pointer;              /* Changes the cursor to a pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.nav-login-cart button:hover {
+    background-color: #0056b3;    /* Darker blue on hover */
+}
+
+/* Styling for the image */
+.nav-login-cart img {
+    width: 20px;                  /* Sets a fixed width */
+    height: 24px;                 /* Sets a fixed height */
+}
+
+
+/* counter  cart adder   */
+
+
+.nav-cart-count{
+    width:22px;
+    height:22px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:-35px;  /*by using the margin top  and  margin-left    the counter move  on the  top of icon cart*/
+    margin-left:-50px;
+
+    border-radius: 28px;
+    font-size:14px;
+    background:red;
+    color:white;
+
+
+}
+
+.nav-dropdown{
+    display: none;
+}
+
+
+@media(max-width:1280px){
+    .navbar{
+        padding:12px 50px;
+
+    }
+    .nav-logo img{
+        width:40px;
+
+    }
+    .nav-logo p{
+
+      font-size:16px;
+    }
+    .nav-menu{
+        gap:30px;
+        font-size:16px;
+
+    }
+
+    .nav-login-cart{
+        gap:30px;
+
+
+    }
+
+    .nav-login-cart button{
+        width:120px;
+        height:45px;
+        font-size:16px;
+
+
+
+    }
+
+    .nav-cart-count{
+        margin-left: -40px;
+        font-size:12px;
+
+    }
+}
+
+
+@media (max-width:1024px){
+.navbar{
+    padding:12px 30px;
+
+}
+.nav-menu{
+    gap:25px;
+    font-size:14px;
+
+}
+
+.nav-login-cart button{
+    width:80px;
+    height:35px;
+    font-size:14px;
+
+}
+.nav-login-cart img{
+    width:30px;
+
+}
+.nav-cart-count{
+    width:18px;
+    height:18px;
+
+}
+
+}
+
+@media(max-width:800px){
+    navbar{
+        padding:10px 0px;
+
+    }
+
+    .nav-dropdown{
+         display:block;
+         width:30px;
+         rotate:-90deg;
+         transition:0.5s;
+
+    }
+
+    .nav-menu{
+        display:none;
+        height:80px;
+        width:100%;
+        position:absolute;
+        background-color: white;
+        justify-content:center;
+        top:50px;
+
+    }
+
+    .nav-menu-visible{
+        display: flex;
+    }
+
+    .nav-dropdown.open{
+        transform:rotate(90deg);
+
+    }
+}
+
+/* for mobile phone */
+@media(max-width:500px){
+    .navbar{
+        width:8px 0px;
+        gap:0;
+
+    }
+    .nav-log{
+        transform:scale(0.8);
+
+    }
+
+    .nav-menu{
+        height:70px;
+        top:50px;
+
+    }
+    .nav-login-cart{
+        transform:scale(0.9);
+
+    }
+
+}
+
+
+
