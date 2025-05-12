@@ -26,7 +26,7 @@ const LoginSignup = () => {
     console.log("login is executed",formData);
 
     let responseData;
-    await fetch('http://localhost:4000/login',{
+    await fetch('https://e-commerce-mernappbackend-1.onrender.com/login',{
       method:'POST',
       headers:{
         Accept:'application/form-data',
@@ -50,7 +50,7 @@ const LoginSignup = () => {
     console.log(" sign up page  is executed",formData);
 
     let responseData;
-    await fetch('http://localhost:4000/signup',{
+    await fetch('https://e-commerce-mernappbackend-1.onrender.com/signup',{
       method:'POST',
       headers:{
         Accept:'application/form-data',
