@@ -44,7 +44,7 @@ const CartItems = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:4000/placeorder", {
+      const response = await fetch("https://e-commerce-mernappbackend-1.onrender.com/placeorder", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json',
